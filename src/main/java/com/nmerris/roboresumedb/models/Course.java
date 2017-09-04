@@ -30,6 +30,8 @@ public class Course {
     @ManyToMany(mappedBy = "courses", fetch = FetchType.EAGER, cascade = CascadeType.ALL)
     private Set<Person> people;
 
+    // this field is used in courselist.html, it is never set so it shows up as 0 in db, but the getter works
+    // I could set it in the controller, but no need for that
     private long numRegistered;
 
 

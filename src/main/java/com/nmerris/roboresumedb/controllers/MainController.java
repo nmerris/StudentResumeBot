@@ -1,6 +1,7 @@
 package com.nmerris.roboresumedb.controllers;
 
 import com.nmerris.roboresumedb.CurrPerson;
+import com.nmerris.roboresumedb.LoadData;
 import com.nmerris.roboresumedb.Utilities;
 import com.nmerris.roboresumedb.models.*;
 import com.nmerris.roboresumedb.repositories.*;
@@ -14,7 +15,6 @@ import org.springframework.web.bind.annotation.*;
 import javax.validation.Valid;
 import java.util.*;
 
-import org.joda.time.DateTime;
 
 @Controller
 public class MainController {
@@ -49,6 +49,9 @@ public class MainController {
     // go through the login route first, then Spring will automatically take them to addperson
     @GetMapping("/")
     public String indexPageGet() {
+
+        LoadData.load(courseRepo, personRepo, workExperienceRepo);
+
         // redirect is like clicking a link on a web page, this route will not even show a view, it just redirects
         // the user to the addperson route
         return "redirect:/studentdirectory";
@@ -414,6 +417,7 @@ public class MainController {
     {
         System.out.println("=============================================================== just entered /delete/{id} GET");
         System.out.println("=========================================== currPerson.getPersonId(): " + currPerson.getPersonId());
+        System.out.println("=========================================== incoming path var Id: " + id);
 
         Person p = personRepo.findOne(currPerson.getPersonId());
 
@@ -427,8 +431,21 @@ public class MainController {
                     // this is not perfect, but it's better than jumping to the top of the page each time
                     return "redirect:/editdetails#education";
                 case "person" :
-                    personRepo.delete(id); // is this all?
-                    return "redirect:/";// TODO make the 'admin' page the default route
+                    // TODO needs work, sometimes has foreign key problems
+
+//                    Person pToDelete = personRepo.findOne(id);
+//                    for (Course c : pToDelete.getCourses()) {
+//                        courseRepo.findOne(c.getId()).removePerson(pToDelete);
+//                    }
+//
+//
+//                    pToDelete.removeAllCourses();
+//                    pToDelete.removeAllSkills();
+//                    pToDelete.removeAllWorkExperiences();
+//                    pToDelete.removeAllEdAchievements();
+//
+//                    personRepo.delete(id); // is this all?
+                    return "redirect:/";
                 case "workexp" :
                     p.removeWorkExperience(workExperienceRepo.findOne(id));
                     workExperienceRepo.delete(id);
@@ -453,12 +470,15 @@ public class MainController {
 
     // id is the id to update
     // type is what table to update
-    // this route is triggered when the user clicks on the 'update' link next to a row in editdetails.html
     @GetMapping("/update/{id}")
     public String update(@PathVariable("id") long id, @RequestParam("type") String type, Model model)
     {
         System.out.println("=============================================================== just entered /update/{id} GET");
-        System.out.println("=========================================== currPerson.getPersonId(): " + currPerson.getPersonId());
+        System.out.println("=========================================== currPerson.getPersonId() initially: " + currPerson.getPersonId());
+        System.out.println("=========================================== setting currPerson id to incoming path var: " + id);
+
+        // set the current person ID to the incoming path variable
+        currPerson.setPersonId(id);
 
         // no matter what view is returned, we ALWAYS will allow the submit button to work, since the form that is
         // displays can only contain a record that already exists in a repo
@@ -468,7 +488,8 @@ public class MainController {
         NavBarState pageState = getPageLinkState();
 
         // get the current Person
-        Person p = personRepo.findOne(currPerson.getPersonId());
+//        Person p = personRepo.findOne(currPerson.getPersonId());
+        Person p = personRepo.findOne(id);
 
         switch (type) {
             case "person" :
@@ -1067,51 +1088,7 @@ public class MainController {
 
         return state;
     }
-    
-    
-    /**
-     * Adds the entire contents of each database table to model. Note that the object names used here must match
-     * the names in the template being used: 'persons', 'edAchievements', 'workExperiences', 'skills'
-     *
-     * @return model, now with the entire contents of each repo
-     */
-//    private void addDbContentsToModel(Model model) {
-//        // there is only one person
-//        model.addAttribute("persons", personRepo.findAll());
-//        model.addAttribute("edAchievements", educationRepo.findAll());
-//        model.addAttribute("workExperiences", workExperienceRepo.findAll());
-//        model.addAttribute("skills", skillRepo.findAll());
-//    }
 
-
-    /**
-     * Composes a person using the data from the tables in the database.  All records are read out and lists are
-     * populated in person for educational achievements, work experiences, and skills.  The person itself should already
-     * contain a first and last name, and an email address.  After calling this function, person should contain
-     * sufficient info to create a resume.
-     * @param person the Person to compose
-     */
-//    private void composePerson(Person person) {
-//        // get all the records from the db
-//        ArrayList<EducationAchievement> edsArrayList = new ArrayList<>();
-//        for(EducationAchievement item : educationRepo.findAll()) {
-//            edsArrayList.add(item);
-//        }
-//        // add it to our Person
-////        person.setEducationAchievements(edsArrayList);
-//
-//        ArrayList<WorkExperience> weArrayList = new ArrayList<>();
-//        for(WorkExperience item : workExperienceRepo.findAll()) {
-//            weArrayList.add(item);
-//        }
-////        person.setWorkExperiences(weArrayList);
-//
-//        ArrayList<Skill> skillsArrayList = new ArrayList<>();
-//        for(Skill item : skillRepo.findAll()) {
-//            skillsArrayList.add(item);
-//        }
-////        person.setSkills(skillsArrayList);
-//    }
 
 
     /**
@@ -1139,6 +1116,7 @@ public class MainController {
             model.addAttribute("firstAndLastName", "Please start by entering personal details");
         }
     }
+
 
 
 }
