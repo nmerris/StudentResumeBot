@@ -1,0 +1,101 @@
+
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+
+<head th:replace="fragments :: headerFragment"></head>
+
+<body>
+
+<!-- a very basic navbar for student summary page, so simple it doesn't need to collapse -->
+<!--<nav class="navbar navbar-inverse navbar-fixed-top card-3">-->
+    <!--<div class="container">-->
+        <!--<div class="navbar-header">-->
+            <!--&lt;!&ndash; TODO make a new github repo and change this link &ndash;&gt;-->
+            <!--<a class="navbar-brand" href="https://github.com/nmerris/RoboResumeFive">STUDBOT 5K</a>-->
+        <!--</div>-->
+
+        <!--<ul class="nav navbar-nav navbar-right">-->
+            <!--<li>-->
+                <!--<a th:href="@{~/studentdirectory}"><span class="glyphicon glyphicon-home"></span>Home</a>-->
+            <!--</li>-->
+        <!--</ul>-->
+    <!--</div>-->
+<!--</nav>-->
+
+<nav th:replace="fragments :: adminNavbar(${highlightDirectory}, ${highlightCourses}, ${highlightAddCourse}, ${highlightAddStudent})"></nav>
+
+<div class="container">
+    <div class="col-lg-8 col-lg-offset-2">
+        <div class="panel panel-default card card-3">
+            <div class="panel-body">
+
+                <h3 th:text="${summaryBarTitle}"></h3>
+
+                <form action="#" th:action="@{/studentregistration}" method="post">
+                    <!-- table of courses student is registered in -->
+                    <div class="table-responsive">
+                        <table class="table table-hover">
+                            <caption>
+                                <h3><b>Registered Courses</b></h3>
+                                <h4>Check to register, uncheck to remove</h4>
+                            </caption>
+
+                            <thead>
+                            <tr>
+                                <th></th>
+                                <th>Title</th>
+                                <th>Instructor</th>
+                                <th>Credits</th>
+                            </tr>
+                            </thead>
+
+                            <tbody>
+                                <th:block th:each="item:${currentlyRegisteredCourses}">
+                                    <tr>
+                                        <!-- the checked Ids are available as an array of long as a request param in the post route -->
+                                        <!-- the top of the course list will have all the students currently registered courses already cheacked-->
+                                        <!-- the user can then check/uncheck as they please, only the checked ones will be returned to controller -->
+                                        <td><input type="checkbox" name="checkedIds" th:value="${item.id}" checked/></td>
+                                        <td><p th:text="${item.title}"></p></td>
+                                        <td><p th:text="${item.instructor}"></p></td>
+                                        <td><p th:text="${item.credits}"></p></td>
+                                    </tr>
+                                </th:block>
+
+                                <!-- now display all the other courses, do not initially check any of them -->
+                                <th:block th:each="item:${allRemainingCourses}">
+                                    <tr>
+                                        <td><input type="checkbox" name="checkedIds" th:value="${item.id}"/></td>
+                                        <td><p th:text="${item.title}"></p></td>
+                                        <td><p th:text="${item.instructor}"></p></td>
+                                        <td><p th:text="${item.credits}"></p></td>
+                                    </tr>
+                                </th:block>
+                            </tbody>
+
+                            <tfoot>
+                            <tr>
+                                <td colspan="3"><p><b>Total Credits</b></p></td>
+                                <td>
+                                    <p th:text="${sumCredits}"></p>
+                                </td>
+                            </tr>
+
+                        </table>
+                    </div>
+
+                    <input th:disabled="${disableSubmit}" class="btn btn-primary bold-input" type="submit" value="Submit"/>
+                </form>
+
+            </div><!-- panel-body -->
+        </div>
+    </div>
+</div><!-- container -->
+
+<!-- javascript -->
+<!-- th:block goes away after processing, but what's inside stays, so it won't affect the page layout -->
+<th:block th:replace="fragments :: javaScriptTemplate"></th:block>
+
+</body>
+
+</html>

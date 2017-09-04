@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+
+<head th:replace="fragments :: headerFragment"></head>
+
+<body>
+
+<div class="container">
+    <div class="col-lg-6 col-lg-offset-3">
+        <div class="panel panel-default card card-3">
+            <div class="panel-body text-center">
+                <h1 class="section-heading">Welcome to Robo Resume</h1>
+                <br/>
+                <br/>
+                <br/>
+                <a class="btn btn-lg btn-primary" href="addperson"><b>Start a New Resume</b></a>
+                <br/>
+                <br/>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Footer -->
+<footer th:replace="fragments :: footer"></footer>
+
+<!-- javascript -->
+<!-- th:block goes away after processing, but what's inside stays, so it won't affect the page layout -->
+<th:block th:replace="fragments :: javaScriptTemplate"></th:block>
+
+</body>
+
+</html>
