@@ -20,7 +20,7 @@
                             <th>Title</th>
                             <th>Instructor</th>
                             <th>Students</th>
-                            <th colspan="3">Action</th>
+                            <th colspan="2">Action</th>
                         </tr>
                         </thead>
                         <tbody>
@@ -37,11 +37,11 @@
                                     <!-- view/edit registered students for course-->
                                     <a th:href="@{|/courseregistration/${item.id}|}" class="action-link">Registration</a>
                                 </td>
-                                <td>
-                                    <!-- TODO implement delete course -->
-                                    <a href="#" class="action-link">Delete</a>
-                                    <!--<a th:href="@{|/delete/${item.id}?type=course|}" class="action-link">Delete</a>-->
-                                </td>
+                                <!--<td>-->
+                                    <!--&lt;!&ndash; TODO implement delete course &ndash;&gt;-->
+                                    <!--<a href="#" class="action-link">Delete</a>-->
+                                    <!--&lt;!&ndash;<a th:href="@{|/delete/${item.id}?type=course|}" class="action-link">Delete</a>&ndash;&gt;-->
+                                <!--</td>-->
                             </tr>
                         </th:block>
                         </tbody>

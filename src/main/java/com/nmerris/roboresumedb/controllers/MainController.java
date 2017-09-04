@@ -475,10 +475,18 @@ public class MainController {
     {
         System.out.println("=============================================================== just entered /update/{id} GET");
         System.out.println("=========================================== currPerson.getPersonId() initially: " + currPerson.getPersonId());
-        System.out.println("=========================================== setting currPerson id to incoming path var: " + id);
+//        System.out.println("=========================================== setting currPerson id to incoming path var: " + id);
 
-        // set the current person ID to the incoming path variable
-        currPerson.setPersonId(id);
+        // set the current person ID to the incoming path variable IF type is person or student
+        Person p;
+        if(type.equals("person") || type.equals("student")) {
+            p = personRepo.findOne(id);
+            currPerson.setPersonId(id);
+            System.out.println("!!!!!!!!!!!!!!!!!!!!!!!! type was person or student, so setting currPerson id to: " + id);
+        }
+        else {
+            p = personRepo.findOne(currPerson.getPersonId());
+        }
 
         // no matter what view is returned, we ALWAYS will allow the submit button to work, since the form that is
         // displays can only contain a record that already exists in a repo
@@ -489,7 +497,7 @@ public class MainController {
 
         // get the current Person
 //        Person p = personRepo.findOne(currPerson.getPersonId());
-        Person p = personRepo.findOne(id);
+//        Person p = personRepo.findOne(id);
 
         switch (type) {
             case "person" :
