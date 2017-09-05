@@ -1,13 +1,10 @@
 package com.nmerris.roboresumedb;
 
-import com.nmerris.roboresumedb.models.Course;
 import org.springframework.context.annotation.Scope;
 import org.springframework.context.annotation.ScopedProxyMode;
 import org.springframework.stereotype.Component;
 
 import java.io.Serializable;
-import java.util.HashSet;
-import java.util.Set;
 
 @Component
 @Scope(proxyMode = ScopedProxyMode.TARGET_CLASS, value="session")
@@ -15,19 +12,18 @@ public class CurrPerson implements Serializable {
 
     private long personId;
 
-    private Set<Course> courses;
-
+    private boolean dummyDataHasBeenLoaded;
 
     public CurrPerson() {
-        setCourses(new HashSet<>());
+        dummyDataHasBeenLoaded = false;
     }
 
-    public Set<Course> getCourses() {
-        return courses;
+    public boolean isDummyDataHasBeenLoaded() {
+        return dummyDataHasBeenLoaded;
     }
 
-    public void setCourses(Set<Course> courses) {
-        this.courses = courses;
+    public void setDummyDataHasBeenLoaded(boolean dummyDataHasBeenLoaded) {
+        this.dummyDataHasBeenLoaded = dummyDataHasBeenLoaded;
     }
 
     public long getPersonId() {

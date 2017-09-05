@@ -5,13 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1d429cd3-2eea-411e-b6aa-55a192693fe4" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/nmerris/roboresumedb/DummyData.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/nmerris/roboresumedb/CurrPerson.java" afterPath="$PROJECT_DIR$/src/main/java/com/nmerris/roboresumedb/CurrPerson.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/nmerris/roboresumedb/controllers/MainController.java" afterPath="$PROJECT_DIR$/src/main/java/com/nmerris/roboresumedb/controllers/MainController.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/templates/fragments.html" afterPath="$PROJECT_DIR$/src/main/resources/templates/fragments.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/application.properties" afterPath="$PROJECT_DIR$/target/classes/application.properties" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/templates/courselist.html" afterPath="$PROJECT_DIR$/target/classes/templates/courselist.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/templates/fragments.html" afterPath="$PROJECT_DIR$/target/classes/templates/fragments.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/templates/studentdirectory.html" afterPath="$PROJECT_DIR$/target/classes/templates/studentdirectory.html" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -45,11 +44,11 @@
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="LoadData.java" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/main/java/com/nmerris/roboresumedb/LoadData.java">
+          <file leaf-file-name="DummyData.java" pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/src/main/java/com/nmerris/roboresumedb/DummyData.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="365">
-                  <caret line="32" column="40" lean-forward="true" selection-start-line="32" selection-start-column="40" selection-end-line="32" selection-end-column="40" />
+                <state relative-caret-position="370">
+                  <caret line="49" column="49" lean-forward="true" selection-start-line="49" selection-start-column="49" selection-end-line="49" selection-end-column="49" />
                   <folding>
                     <element signature="imports" expanded="true" />
                   </folding>
@@ -71,12 +70,12 @@
             <entry file="file://$PROJECT_DIR$/src/main/java/com/nmerris/roboresumedb/controllers/MainController.java">
               <provider selected="true" editor-type-id="text-editor">
                 <state relative-caret-position="510">
-                  <caret line="52" column="66" lean-forward="true" selection-start-line="52" selection-start-column="66" selection-end-line="52" selection-end-column="66" />
+                  <caret line="51" column="0" lean-forward="false" selection-start-line="51" selection-start-column="0" selection-end-line="51" selection-end-column="0" />
                   <folding>
                     <element signature="imports" expanded="true" />
                     <element signature="method#addEdGet#0;class#MainController#0" expanded="false" />
                     <element signature="method#addEdPost#0;class#MainController#0" expanded="false" />
-                    <element signature="e#10667#10770#0" expanded="false" />
+                    <element signature="e#10994#11097#0" expanded="false" />
                     <element signature="method#addWorkGet#0;class#MainController#0" expanded="false" />
                     <element signature="method#addWorkPost#0;class#MainController#0" expanded="false" />
                   </folding>
@@ -104,11 +103,26 @@
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="fragments.html" pinned="false" current-in-tab="true">
+          <file leaf-file-name="CurrPerson.java" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/main/java/com/nmerris/roboresumedb/CurrPerson.java">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="420">
+                  <caret line="36" column="0" lean-forward="true" selection-start-line="36" selection-start-column="0" selection-end-line="36" selection-end-column="0" />
+                  <folding>
+                    <element signature="e#456#457#0" expanded="true" />
+                    <element signature="e#502#503#0" expanded="true" />
+                    <element signature="e#551#552#0" expanded="true" />
+                    <element signature="e#596#597#0" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="fragments.html" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/src/main/resources/templates/fragments.html">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="367">
-                  <caret line="46" column="25" lean-forward="true" selection-start-line="46" selection-start-column="25" selection-end-line="46" selection-end-column="25" />
+                <state relative-caret-position="637">
+                  <caret line="61" column="111" lean-forward="true" selection-start-line="61" selection-start-column="111" selection-end-line="61" selection-end-column="111" />
                   <folding />
                 </state>
               </provider>
@@ -121,16 +135,16 @@
           <file leaf-file-name="MainController.java" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/src/main/java/com/nmerris/roboresumedb/controllers/MainController.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="409">
-                  <caret line="488" column="9" lean-forward="true" selection-start-line="488" selection-start-column="9" selection-end-line="488" selection-end-column="9" />
+                <state relative-caret-position="-446">
+                  <caret line="682" column="18" lean-forward="false" selection-start-line="682" selection-start-column="18" selection-end-line="682" selection-end-column="18" />
                   <folding>
                     <element signature="imports" expanded="true" />
                     <element signature="method#addEdGet#0;class#MainController#0" expanded="false" />
                     <element signature="method#addEdPost#0;class#MainController#0" expanded="false" />
-                    <element signature="e#10667#10770#0" expanded="false" />
+                    <element signature="e#10994#11097#0" expanded="false" />
                     <element signature="method#addWorkGet#0;class#MainController#0" expanded="false" />
                     <element signature="method#addWorkPost#0;class#MainController#0" expanded="false" />
-                    <element signature="e#20870#20924#0" expanded="false" />
+                    <element signature="e#21197#21251#0" expanded="false" />
                   </folding>
                 </state>
               </provider>
@@ -271,7 +285,6 @@
         <option value="$PROJECT_DIR$/src/main/resources/templates/addperson.html" />
         <option value="$PROJECT_DIR$/src/main/java/com/nmerris/roboresumedb/models/Person.java" />
         <option value="$PROJECT_DIR$/src/main/resources/templates/addstudent.html" />
-        <option value="$PROJECT_DIR$/src/main/java/com/nmerris/roboresumedb/CurrPerson.java" />
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/main/resources/application.properties" />
         <option value="$PROJECT_DIR$/src/main/java/com/nmerris/roboresumedb/models/Course.java" />
@@ -279,7 +292,9 @@
         <option value="$PROJECT_DIR$/src/main/resources/templates/studentdirectory.html" />
         <option value="$PROJECT_DIR$/src/main/java/com/nmerris/roboresumedb/LoadData.java" />
         <option value="$PROJECT_DIR$/src/main/resources/templates/fragments.html" />
+        <option value="$PROJECT_DIR$/src/main/java/com/nmerris/roboresumedb/CurrPerson.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/nmerris/roboresumedb/controllers/MainController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/nmerris/roboresumedb/DummyData.java" />
       </list>
     </option>
   </component>
@@ -290,9 +305,10 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="1919" />
-    <option name="width" value="2562" />
-    <option name="height" value="1440" />
+    <option name="x" value="1920" />
+    <option name="y" value="192" />
+    <option name="width" value="2554" />
+    <option name="height" value="1436" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
@@ -555,14 +571,7 @@
       <workItem from="1503925001322" duration="8123000" />
       <workItem from="1504438889393" duration="38380000" />
       <workItem from="1504522306835" duration="30852000" />
-      <workItem from="1504559266600" duration="9437000" />
-    </task>
-    <task id="LOCAL-00073" summary="add comments, also tested /addeducation post route disable submit if &gt;= 10 records... ok">
-      <created>1504365535231</created>
-      <option name="number" value="00073" />
-      <option name="presentableId" value="LOCAL-00073" />
-      <option name="project" value="LOCAL" />
-      <updated>1504365535231</updated>
+      <workItem from="1504559266600" duration="15663000" />
     </task>
     <task id="LOCAL-00074" summary="modify /update to reflect current ed repo count, also extracted Person p from switch so you don't need to find it multiple times, tested ok">
       <created>1504365977524</created>
@@ -900,11 +909,18 @@
       <option name="project" value="LOCAL" />
       <updated>1504567195829</updated>
     </task>
-    <option name="localTasksCounter" value="122" />
+    <task id="LOCAL-00122" summary="fix another bug up /update">
+      <created>1504568912632</created>
+      <option name="number" value="00122" />
+      <option name="presentableId" value="LOCAL-00122" />
+      <option name="project" value="LOCAL" />
+      <updated>1504568912632</updated>
+    </task>
+    <option name="localTasksCounter" value="123" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="205269000" />
+    <option name="totallyTimeSpent" value="211495000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1919" y="0" width="2562" height="1440" extended-state="6" />
@@ -927,8 +943,8 @@
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.13789062" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Bean Validation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32927758" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="FLOATING" visible="true" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" x="1470" y="154" width="416" height="857" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.15893537" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="FLOATING" visible="true" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" x="1470" y="154" width="416" height="857" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -973,7 +989,6 @@
     <ignored-roots>
       <path value="$PROJECT_DIR$" />
     </ignored-roots>
-    <MESSAGE value="added a bit more testing... everything is swell" />
     <MESSAGE value="addcourse and courselist pages showing up, still working" />
     <MESSAGE value="update course working, not tested with any persons attached to it yet" />
     <MESSAGE value="add student page functions, have not tested with courses attached yet" />
@@ -998,7 +1013,8 @@
     <MESSAGE value="just imported maven" />
     <MESSAGE value="change properties file from create to update" />
     <MESSAGE value="fix bug... had to update currPerson id after editing a student from admin section" />
-    <option name="LAST_COMMIT_MESSAGE" value="fix bug... had to update currPerson id after editing a student from admin section" />
+    <MESSAGE value="fix another bug up /update" />
+    <option name="LAST_COMMIT_MESSAGE" value="fix another bug up /update" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1054,7 +1070,7 @@
             <element signature="imports" expanded="true" />
             <element signature="method#addEdGet#0;class#MainController#0" expanded="false" />
             <element signature="method#addEdPost#0;class#MainController#0" expanded="false" />
-            <element signature="e#10667#10770#0" expanded="false" />
+            <element signature="e#10994#11097#0" expanded="false" />
             <element signature="method#addWorkGet#0;class#MainController#0" expanded="false" />
             <element signature="method#addWorkPost#0;class#MainController#0" expanded="false" />
           </folding>
@@ -1191,7 +1207,7 @@
         <state relative-caret-position="135">
           <caret line="9" column="0" lean-forward="false" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="imports" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1287,22 +1303,11 @@
         <state relative-caret-position="308">
           <caret line="40" column="67" lean-forward="false" selection-start-line="40" selection-start-column="67" selection-end-line="40" selection-end-column="67" />
           <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#1598#1599#0" expanded="true" />
-            <element signature="e#1633#1634#0" expanded="true" />
-            <element signature="e#2021#2022#0" expanded="true" />
-            <element signature="e#2052#2053#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/nmerris/roboresumedb/CurrPerson.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="21" column="33" lean-forward="false" selection-start-line="21" selection-start-column="33" selection-end-line="21" selection-end-column="33" />
-          <folding>
-            <element signature="e#541#542#0" expanded="true" />
-            <element signature="e#584#585#0" expanded="true" />
+            <element signature="imports" expanded="false" />
+            <element signature="e#1598#1599#0" expanded="false" />
+            <element signature="e#1633#1634#0" expanded="false" />
+            <element signature="e#2021#2022#0" expanded="false" />
+            <element signature="e#2052#2053#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1376,36 +1381,49 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/nmerris/roboresumedb/LoadData.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/nmerris/roboresumedb/CurrPerson.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="365">
-          <caret line="32" column="40" lean-forward="true" selection-start-line="32" selection-start-column="40" selection-end-line="32" selection-end-column="40" />
+        <state relative-caret-position="420">
+          <caret line="36" column="0" lean-forward="true" selection-start-line="36" selection-start-column="0" selection-end-line="36" selection-end-column="0" />
           <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/nmerris/roboresumedb/controllers/MainController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="510">
-          <caret line="52" column="66" lean-forward="true" selection-start-line="52" selection-start-column="66" selection-end-line="52" selection-end-column="66" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="method#addEdGet#0;class#MainController#0" expanded="false" />
-            <element signature="method#addEdPost#0;class#MainController#0" expanded="false" />
-            <element signature="e#10667#10770#0" expanded="false" />
-            <element signature="method#addWorkGet#0;class#MainController#0" expanded="false" />
-            <element signature="method#addWorkPost#0;class#MainController#0" expanded="false" />
+            <element signature="e#456#457#0" expanded="true" />
+            <element signature="e#502#503#0" expanded="true" />
+            <element signature="e#551#552#0" expanded="true" />
+            <element signature="e#596#597#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/templates/fragments.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="367">
-          <caret line="46" column="25" lean-forward="true" selection-start-line="46" selection-start-column="25" selection-end-line="46" selection-end-column="25" />
+        <state relative-caret-position="637">
+          <caret line="61" column="111" lean-forward="true" selection-start-line="61" selection-start-column="111" selection-end-line="61" selection-end-column="111" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/nmerris/roboresumedb/controllers/MainController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="510">
+          <caret line="51" column="0" lean-forward="false" selection-start-line="51" selection-start-column="0" selection-end-line="51" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="method#addEdGet#0;class#MainController#0" expanded="false" />
+            <element signature="method#addEdPost#0;class#MainController#0" expanded="false" />
+            <element signature="e#10994#11097#0" expanded="false" />
+            <element signature="method#addWorkGet#0;class#MainController#0" expanded="false" />
+            <element signature="method#addWorkPost#0;class#MainController#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/nmerris/roboresumedb/DummyData.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="370">
+          <caret line="49" column="49" lean-forward="true" selection-start-line="49" selection-start-column="49" selection-end-line="49" selection-end-column="49" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

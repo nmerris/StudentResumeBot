@@ -1,7 +1,7 @@
 package com.nmerris.roboresumedb.controllers;
 
 import com.nmerris.roboresumedb.CurrPerson;
-import com.nmerris.roboresumedb.LoadData;
+import com.nmerris.roboresumedb.DummyData;
 import com.nmerris.roboresumedb.Utilities;
 import com.nmerris.roboresumedb.models.*;
 import com.nmerris.roboresumedb.repositories.*;
@@ -50,11 +50,22 @@ public class MainController {
     @GetMapping("/")
     public String indexPageGet() {
 
-        LoadData.load(courseRepo, personRepo, workExperienceRepo);
-
         // redirect is like clicking a link on a web page, this route will not even show a view, it just redirects
         // the user to the addperson route
         return "redirect:/studentdirectory";
+    }
+
+
+    @GetMapping("/loaddummydata")
+    public String loadDummyData() {
+
+        // really should only allow this to happen once per session
+        if(!currPerson.isDummyDataHasBeenLoaded()) {
+            DummyData.load(courseRepo, personRepo, workExperienceRepo, skillRepo, educationRepo);
+            currPerson.setDummyDataHasBeenLoaded(true);
+        }
+
+        return "redirect:/";
     }
 
 
@@ -475,7 +486,6 @@ public class MainController {
     {
         System.out.println("=============================================================== just entered /update/{id} GET");
         System.out.println("=========================================== currPerson.getPersonId() initially: " + currPerson.getPersonId());
-//        System.out.println("=========================================== setting currPerson id to incoming path var: " + id);
 
         // set the current person ID to the incoming path variable IF type is person or student
         Person p;
