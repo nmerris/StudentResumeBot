@@ -6,6 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="1d429cd3-2eea-411e-b6aa-55a192693fe4" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pom.xml" afterPath="$PROJECT_DIR$/pom.xml" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -29,21 +30,21 @@
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="application.properties" pinned="false" current-in-tab="false">
+          <file leaf-file-name="application.properties" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/src/main/resources/application.properties">
               <provider selected="true" editor-type-id="text-editor">
                 <state relative-caret-position="390">
-                  <caret line="26" column="36" lean-forward="true" selection-start-line="26" selection-start-column="36" selection-end-line="26" selection-end-column="36" />
+                  <caret line="26" column="35" lean-forward="true" selection-start-line="26" selection-start-column="35" selection-end-line="26" selection-end-column="35" />
                   <folding />
                 </state>
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="DummyData.java" pinned="false" current-in-tab="true">
+          <file leaf-file-name="DummyData.java" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/src/main/java/com/nmerris/roboresumedb/DummyData.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="580">
-                  <caret line="63" column="0" lean-forward="true" selection-start-line="63" selection-start-column="0" selection-end-line="63" selection-end-column="0" />
+                <state relative-caret-position="370">
+                  <caret line="49" column="49" lean-forward="false" selection-start-line="49" selection-start-column="49" selection-end-line="49" selection-end-column="49" />
                   <folding>
                     <element signature="imports" expanded="true" />
                   </folding>
@@ -55,7 +56,7 @@
             <entry file="file://$PROJECT_DIR$/src/main/resources/templates/studentdirectory.html">
               <provider selected="true" editor-type-id="text-editor">
                 <state relative-caret-position="270">
-                  <caret line="18" column="35" lean-forward="true" selection-start-line="18" selection-start-column="35" selection-end-line="18" selection-end-column="35" />
+                  <caret line="18" column="35" lean-forward="false" selection-start-line="18" selection-start-column="35" selection-end-line="18" selection-end-column="35" />
                   <folding />
                 </state>
               </provider>
@@ -82,7 +83,7 @@
             <entry file="file://$PROJECT_DIR$/src/main/resources/templates/courselist.html">
               <provider selected="true" editor-type-id="text-editor">
                 <state relative-caret-position="810">
-                  <caret line="54" column="0" lean-forward="true" selection-start-line="54" selection-start-column="0" selection-end-line="54" selection-end-column="0" />
+                  <caret line="54" column="0" lean-forward="false" selection-start-line="54" selection-start-column="0" selection-end-line="54" selection-end-column="0" />
                   <folding />
                 </state>
               </provider>
@@ -91,8 +92,8 @@
           <file leaf-file-name="pom.xml" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/pom.xml">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="254">
-                  <caret line="39" column="0" lean-forward="true" selection-start-line="39" selection-start-column="0" selection-end-line="39" selection-end-column="0" />
+                <state relative-caret-position="265">
+                  <caret line="41" column="0" lean-forward="false" selection-start-line="41" selection-start-column="0" selection-end-line="45" selection-end-column="25" />
                   <folding />
                 </state>
               </provider>
@@ -102,7 +103,7 @@
             <entry file="file://$PROJECT_DIR$/src/main/java/com/nmerris/roboresumedb/CurrPerson.java">
               <provider selected="true" editor-type-id="text-editor">
                 <state relative-caret-position="420">
-                  <caret line="36" column="0" lean-forward="true" selection-start-line="36" selection-start-column="0" selection-end-line="36" selection-end-column="0" />
+                  <caret line="36" column="0" lean-forward="false" selection-start-line="36" selection-start-column="0" selection-end-line="36" selection-end-column="0" />
                   <folding>
                     <element signature="e#456#457#0" expanded="true" />
                     <element signature="e#502#503#0" expanded="true" />
@@ -117,7 +118,7 @@
             <entry file="file://$PROJECT_DIR$/src/main/resources/templates/fragments.html">
               <provider selected="true" editor-type-id="text-editor">
                 <state relative-caret-position="637">
-                  <caret line="61" column="111" lean-forward="true" selection-start-line="61" selection-start-column="111" selection-end-line="61" selection-end-column="111" />
+                  <caret line="61" column="111" lean-forward="false" selection-start-line="61" selection-start-column="111" selection-end-line="61" selection-end-column="111" />
                   <folding />
                 </state>
               </provider>
@@ -280,8 +281,6 @@
         <option value="$PROJECT_DIR$/src/main/resources/templates/addperson.html" />
         <option value="$PROJECT_DIR$/src/main/java/com/nmerris/roboresumedb/models/Person.java" />
         <option value="$PROJECT_DIR$/src/main/resources/templates/addstudent.html" />
-        <option value="$PROJECT_DIR$/pom.xml" />
-        <option value="$PROJECT_DIR$/src/main/resources/application.properties" />
         <option value="$PROJECT_DIR$/src/main/java/com/nmerris/roboresumedb/models/Course.java" />
         <option value="$PROJECT_DIR$/src/main/resources/templates/courselist.html" />
         <option value="$PROJECT_DIR$/src/main/resources/templates/studentdirectory.html" />
@@ -290,6 +289,8 @@
         <option value="$PROJECT_DIR$/src/main/java/com/nmerris/roboresumedb/CurrPerson.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/nmerris/roboresumedb/controllers/MainController.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/nmerris/roboresumedb/DummyData.java" />
+        <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/src/main/resources/application.properties" />
       </list>
     </option>
   </component>
@@ -566,14 +567,7 @@
       <workItem from="1503925001322" duration="8123000" />
       <workItem from="1504438889393" duration="38380000" />
       <workItem from="1504522306835" duration="30852000" />
-      <workItem from="1504559266600" duration="16106000" />
-    </task>
-    <task id="LOCAL-00075" summary="modify skill and work exp repos, they now have methods like ed repo for count and to return iterable, not tested yet">
-      <created>1504366267797</created>
-      <option name="number" value="00075" />
-      <option name="presentableId" value="LOCAL-00075" />
-      <option name="project" value="LOCAL" />
-      <updated>1504366267797</updated>
+      <workItem from="1504559266600" duration="16309000" />
     </task>
     <task id="LOCAL-00076" summary="modified getNavBarState to use current repo counts of ALL repos.. can't test yet because Models need to ALL be updated to use table associations.. will do that next">
       <created>1504367779746</created>
@@ -911,11 +905,18 @@
       <option name="project" value="LOCAL" />
       <updated>1504575159160</updated>
     </task>
-    <option name="localTasksCounter" value="124" />
+    <task id="LOCAL-00124" summary="about to deploy to heroku again">
+      <created>1504575585299</created>
+      <option name="number" value="00124" />
+      <option name="presentableId" value="LOCAL-00124" />
+      <option name="project" value="LOCAL" />
+      <updated>1504575585299</updated>
+    </task>
+    <option name="localTasksCounter" value="125" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="211938000" />
+    <option name="totallyTimeSpent" value="212141000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1919" y="0" width="2562" height="1440" extended-state="6" />
@@ -984,7 +985,6 @@
     <ignored-roots>
       <path value="$PROJECT_DIR$" />
     </ignored-roots>
-    <MESSAGE value="update course working, not tested with any persons attached to it yet" />
     <MESSAGE value="add student page functions, have not tested with courses attached yet" />
     <MESSAGE value="fixed some bugs in addstudent functionality, add Edit link to student directory so each student can be edited within the admin section of the app... can still edit through the resume section" />
     <MESSAGE value="summary page looking decent, registered courses table showing up, need to register a student for some courses to test" />
@@ -1009,7 +1009,8 @@
     <MESSAGE value="fix bug... had to update currPerson id after editing a student from admin section" />
     <MESSAGE value="fix another bug up /update" />
     <MESSAGE value="DummyData loads nice random data" />
-    <option name="LAST_COMMIT_MESSAGE" value="DummyData loads nice random data" />
+    <MESSAGE value="about to deploy to heroku again" />
+    <option name="LAST_COMMIT_MESSAGE" value="about to deploy to heroku again" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1326,22 +1327,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="254">
-          <caret line="39" column="0" lean-forward="true" selection-start-line="39" selection-start-column="0" selection-end-line="39" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/application.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="390">
-          <caret line="26" column="36" lean-forward="true" selection-start-line="26" selection-start-column="36" selection-end-line="26" selection-end-column="36" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/templates/addskill.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="120">
@@ -1363,7 +1348,7 @@
     <entry file="file://$PROJECT_DIR$/src/main/resources/templates/courselist.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="810">
-          <caret line="54" column="0" lean-forward="true" selection-start-line="54" selection-start-column="0" selection-end-line="54" selection-end-column="0" />
+          <caret line="54" column="0" lean-forward="false" selection-start-line="54" selection-start-column="0" selection-end-line="54" selection-end-column="0" />
           <folding />
         </state>
       </provider>
@@ -1371,7 +1356,7 @@
     <entry file="file://$PROJECT_DIR$/src/main/resources/templates/studentdirectory.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="270">
-          <caret line="18" column="35" lean-forward="true" selection-start-line="18" selection-start-column="35" selection-end-line="18" selection-end-column="35" />
+          <caret line="18" column="35" lean-forward="false" selection-start-line="18" selection-start-column="35" selection-end-line="18" selection-end-column="35" />
           <folding />
         </state>
       </provider>
@@ -1379,7 +1364,7 @@
     <entry file="file://$PROJECT_DIR$/src/main/java/com/nmerris/roboresumedb/CurrPerson.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="420">
-          <caret line="36" column="0" lean-forward="true" selection-start-line="36" selection-start-column="0" selection-end-line="36" selection-end-column="0" />
+          <caret line="36" column="0" lean-forward="false" selection-start-line="36" selection-start-column="0" selection-end-line="36" selection-end-column="0" />
           <folding>
             <element signature="e#456#457#0" expanded="true" />
             <element signature="e#502#503#0" expanded="true" />
@@ -1392,7 +1377,7 @@
     <entry file="file://$PROJECT_DIR$/src/main/resources/templates/fragments.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="637">
-          <caret line="61" column="111" lean-forward="true" selection-start-line="61" selection-start-column="111" selection-end-line="61" selection-end-column="111" />
+          <caret line="61" column="111" lean-forward="false" selection-start-line="61" selection-start-column="111" selection-end-line="61" selection-end-column="111" />
           <folding />
         </state>
       </provider>
@@ -1414,11 +1399,27 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/nmerris/roboresumedb/DummyData.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="580">
-          <caret line="63" column="0" lean-forward="true" selection-start-line="63" selection-start-column="0" selection-end-line="63" selection-end-column="0" />
+        <state relative-caret-position="370">
+          <caret line="49" column="49" lean-forward="false" selection-start-line="49" selection-start-column="49" selection-end-line="49" selection-end-column="49" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="265">
+          <caret line="41" column="0" lean-forward="false" selection-start-line="41" selection-start-column="0" selection-end-line="45" selection-end-column="25" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/application.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="390">
+          <caret line="26" column="35" lean-forward="true" selection-start-line="26" selection-start-column="35" selection-end-line="26" selection-end-column="35" />
+          <folding />
         </state>
       </provider>
     </entry>
